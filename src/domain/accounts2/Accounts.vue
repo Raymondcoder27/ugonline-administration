@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, type Ref } from "vue";
 import BackofficeAccounts from "@/domain/accounts/Accounts.vue";
-import UserAccounts from "@/domain/accounts2/UserAccounts.vue";
+import Agents from "@/domain/accounts2/Agents.vue";
 import Mda from "@/domain/accounts2/Mda.vue";
 
 const activeTab: Ref<string> = ref("backoffice");
@@ -51,7 +51,7 @@ function select(tab: string) {
       <div class="w-full">
         <BackofficeAccounts v-if="activeTab == 'backoffice'" />
         <Mda v-if="activeTab == 'mdas'" />
-        <UserAccounts v-if="activeTab == 'agents'" />
+        <Agents v-if="activeTab == 'agents'" />
       </div>
     </div>
   </div>
