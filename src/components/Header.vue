@@ -66,9 +66,7 @@ const menuOpen = ref(useStorage("sms", true));
   <nav
     class="top-0 relative z-50 w-full md:flex-row md:flex-nowrap md:justify-between flex flex-wrap items-center px-2 py-3 navbar-expand-lg border-b border-primary-200 bg-white"
   >
-    <div
-      class="w-full mx-auto flex justify-between items-center px-4"
-    >
+    <div class="w-full mx-auto flex justify-between items-center px-4">
       <div class="flex items-center">
         <span
           @click="sideMenuOpen = !sideMenuOpen"
@@ -84,7 +82,9 @@ const menuOpen = ref(useStorage("sms", true));
           ></i>
         </span>
         <div class="ml-4">
-          <span class="my-auto mx-2 text-white rounded font-bold text-xl shadow">
+          <span
+            class="my-auto mx-2 text-white rounded font-bold text-xl shadow"
+          >
             <b class="rounded-l bg-black-800 p-1">ug</b>
             <b class="bg-yellow-500 p-1">On</b>
             <b class="rounded-r bg-primary-700 p-1">line</b>
@@ -95,7 +95,6 @@ const menuOpen = ref(useStorage("sms", true));
         <ProfileSection />
       </div>
     </div>
-
   </nav>
 </template>
 
