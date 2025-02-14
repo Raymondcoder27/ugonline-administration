@@ -7,7 +7,7 @@ import { createPinia } from "pinia";
 import router from "./router";
 import {useTitle} from "@vueuse/core";
 
-useTitle('UGONLINE | Administration')
+useTitle('Ugonline | Administration')
 const app = createApp(App);
 app.use(createPinia());
 app.use(router);
