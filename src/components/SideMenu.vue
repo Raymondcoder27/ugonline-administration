@@ -124,7 +124,7 @@ function logout() {
            class="relative h-full bg-white shadow-xl flex flex-col items-stretch justify-between z-10 pt-4">
         <div class="flex flex-col min-h-full px-0 w-full mx-auto">
 
-          <div class="flex px-2 pt-1 pb-5" v-if="menuOpen">
+          <!-- <div class="flex px-2 pt-1 pb-5" v-if="menuOpen">
             <div class="w-full text-center">
               <div class="flex py-1 px-2 my-1">
                 <div class="w-full text-center" v-if="accountStore.profile">
@@ -140,7 +140,7 @@ function logout() {
                 </span>
               </button>
             </div>
-          </div>
+          </div> -->
 
           <!-- Link Section-->
           <div class="flex flex-col flex-grow overflow-y-auto mt-1">
