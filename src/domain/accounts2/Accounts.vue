@@ -2,7 +2,7 @@
 import { ref, type Ref } from "vue";
 import BackofficeAccounts from "@/domain/accounts/Accounts.vue";
 import UserAccounts from "@/domain/accounts2/UserAccounts.vue";
-import BranchManagers from "@/domain/accounts2/BranchManagers.vue";
+import Mda from "@/domain/accounts2/Mda.vue";
 
 const activeTab: Ref<string> = ref("backoffice");
 
@@ -50,7 +50,7 @@ function select(tab: string) {
     <div class="flex flex-grow">
       <div class="w-full">
         <BackofficeAccounts v-if="activeTab == 'backoffice'" />
-        <BranchManagers v-if="activeTab == 'mdas'" />
+        <Mda v-if="activeTab == 'mdas'" />
         <UserAccounts v-if="activeTab == 'agents'" />
       </div>
     </div>
