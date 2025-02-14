@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import AppModal from "@/components/AppModal.vue";
-import { useAccounts } from "@/domain/accounts2/stores/accounts";
+import { useAccounts } from "@/domain/accounts/stores";
 import { type Ref, ref, watch } from "vue";
-import CreateAccount from "@/domain/accounts2/CreateAccount.vue";
+import CreateAccount from "@/domain/accounts/CreateAccount.vue";
 
 const accounts = useAccounts();
 const modalOpen: Ref<boolean> = ref(false);
