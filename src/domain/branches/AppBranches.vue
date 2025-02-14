@@ -51,7 +51,7 @@ function branchCloseModal(branch: Branch) {
 }
 
 const jumpToPage = () => {
-  if (pageInput.value > totalPages.value) { 
+  if (pageInput.value > totalPages.value) {
     page.value = totalPages.value;
   } else if (pageInput.value < 1) {
     page.value = 1;
@@ -135,19 +135,6 @@ async function deleteBranch(branch: Branch | null) {
   }
 }
 
-// function deleteBranch(branch: Branch) {
-//   try {
-//     // Filter out the branch from the local array
-//     branches.value = branches.value.filter((b) => b.id !== branch.id);
-//     // Optionally, close the modal if it's open
-//     showBranchCloseModal.value = false;
-//     // Notify the user of success
-//     notify.success("Branch Deleted (front end only)");
-//   } catch (error: any) {
-//     notify.error(error.response?.data?.message || "Error deleting branch");
-//   }
-// }
-
 function assignManager(branch: Branch) {
   // Logic to open the modal or start the process
   console.log(`Assigning manager for branch: ${branch.name}`);
@@ -155,13 +142,6 @@ function assignManager(branch: Branch) {
   // Example: modalOpen.value = true;
   assignManagerModalOpen.value = true;
 }
-
-// function deleteBranch(branchId: string) {
-//   branchStore.deleteBranch(branchId); // Assuming this is a mutation to remove the branch
-//   // branchStore.branches = branchStore.branches.filter((b) => b.id !== branchId); // Manually update the store
-//   // fetchBranches(); // Refetch the branches after deleting, if needed
-//   notify.success("Branch Deleted");
-// }
 
 function close() {
   modalOpen.value = false;
