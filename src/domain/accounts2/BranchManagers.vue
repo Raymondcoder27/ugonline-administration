@@ -51,13 +51,7 @@ const jumpToPage = () => {
   fetchBranchManagers();
 };
 function fetchBranchManagers() {
-  // store
-  //   .fetchBranchManagers(page.value, limit.value)
-  //   .then(() => (loading.value = false))
-  //   .catch((error: ApiError) => {
-  //     loading.value = false;
-  //     notify.error(error.response.data.message);
-  //   });
+
 
   loading.value = true;
   // Fetch the services based on the page and limit
