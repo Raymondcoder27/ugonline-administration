@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import type { CreateAccount } from "@/types";
 import { type Ref, ref, reactive } from "vue";
-import { useAccounts } from "@/agentadmindomain/accounts/stores";
+import { useAccounts } from "@/domain/accounts/stores";
 import { useNotificationsStore } from "@/stores/notifications";
 import { defineEmits } from "vue";
-import { useBranchStore } from "@/agentadmindomain/branches/stores";
+import { useBranchStore } from "@/domain/branches/stores";
 import { idText } from "typescript";
 
 const branchStore = useBranchStore();

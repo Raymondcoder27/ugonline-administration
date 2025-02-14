@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import AppModal from "@/components/AppModal.vue";
-import { useAccounts } from "@/agentadmindomain/accounts/stores";
+import { useAccounts } from "@/domain/accounts/stores";
 import { onMounted, type Ref, ref, watch, reactive, computed } from "vue";
-import CreateAccount from "@/agentadmindomain/accounts/components/CreateAccount.vue";
+import CreateAccount from "@/domain/accounts/components/CreateAccount.vue";
 import moment from "moment";
 import type { IGoFilter } from "@/types";
 import { useDebounceFn } from "@vueuse/core";
@@ -12,10 +12,10 @@ import type {
   ManagerAccount,
   Account,
 } from "./types";
-// import AddManager from "@/agentadmindomain/accounts/components/AddManager.vue";
-import EditBranchManager from "@/agentadmindomain/accounts/components/EditManager.vue";
+// import AddManager from "@/domain/accounts/components/AddManager.vue";
+import EditBranchManager from "@/domain/accounts/components/EditManager.vue";
 
-import { useBranchStore } from "@/agentadmindomain/branches/stores"; // Updated import
+import { useBranchStore } from "@/domain/branches/stores"; // Updated import
 
 const editModalOpen: Ref<boolean> = ref(false);
 const viewModalOpen: Ref<boolean> = ref(false);

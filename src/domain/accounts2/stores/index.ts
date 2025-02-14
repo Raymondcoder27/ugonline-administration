@@ -1,7 +1,7 @@
 import { defineStore } from "pinia";
 import { ref, type Ref } from "vue";
 import api from "@/config/api";
-import { useBranchStore } from "@/agentadmindomain/branches/stores"; // Add this import
+import { useBranchStore } from "@/domain/branches/stores"; // Add this import
 import type {
   Account,
   ManagerAccount,

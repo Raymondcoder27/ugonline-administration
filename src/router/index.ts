@@ -1,12 +1,13 @@
-import {createRouter, createWebHistory, type RouteRecordRaw} from "vue-router";
+import { createRouter, createWebHistory, type RouteRecordRaw } from "vue-router";
 import MainLayout from "@/layouts/MainLayout.vue";
 import ServiceProviders from "@/domain/providers/ServiceProviders.vue";
 import Services from "@/domain/services/Services.vue";
-import Accounts from "@/domain/accounts/Accounts.vue";
+// import Accounts from "@/domain/accounts/Accounts.vue";
+import Accounts from "@/domain/accounts2/Accounts.vue";
 import ServiceRequests from "@/domain/applications/ServiceApplications.vue";
 import FormComposer from "@/domain/composer/FormComposer.vue";
 import { routes as authRoutes } from "@/domain/auth/routes"
-import {useAuth} from "@/domain/auth/composables";
+import { useAuth } from "@/domain/auth/composables";
 import moment from "moment";
 import ComposerLayout from "@/layouts/ComposerLayout.vue";
 import FormPreview from "@/domain/composer/FormPreview.vue";

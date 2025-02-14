@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import AppModal from "@/components/AppModal.vue";
-import { useAccounts } from "@/agentadmindomain/accounts/stores";
+import { useAccounts } from "@/domain/accounts/stores";
 import { onMounted, type Ref, ref, watch, reactive, computed } from "vue";
-import CreateAccount from "@/agentadmindomain/accounts/components/CreateAccount.vue";
+import CreateAccount from "@/domain/accounts/components/CreateAccount.vue";
 import moment from "moment";
 import type { IGoFilter } from "@/types";
 import { useDebounceFn } from "@vueuse/core";
@@ -11,7 +11,7 @@ import type {
   TAccountVerificationType,
   Account,
 } from "./types";
-import EditBackOfficeAccount from "@/agentadmindomain/accounts/components/EditBackOfficeAccount.vue";
+import EditBackOfficeAccount from "@/domain/accounts/components/EditBackOfficeAccount.vue";
 
 
 const page: Ref<number> = ref(1);
