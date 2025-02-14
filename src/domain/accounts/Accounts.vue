@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import AppModal from "@/components/AppModal.vue";
-import { useAccounts } from "@/domain/accounts/stores";
+import { useAccounts } from "@/domain/accounts/stores/accounts";
 import { type Ref, ref, watch } from "vue";
 import CreateAccount from "@/domain/accounts/CreateAccount.vue";
 
