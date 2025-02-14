@@ -30,11 +30,19 @@ function select(tab: string) {
       </div>
       <div
         :class="
-          activeTab == 'branchmanagers' ? 'w-2/12 tab-active' : 'w-2/12 tab'
+          activeTab == 'mdas' ? 'w-2/12 tab-active' : 'w-2/12 tab'
         "
-        @click="select('branchmanagers')"
+        @click="select('mdas')"
       >
-        Branch Managers
+        MDAs
+      </div>
+      <div
+        :class="
+          activeTab == 'mdas' ? 'w-2/12 tab-active' : 'w-2/12 tab'
+        "
+        @click="select('mdas')"
+      >
+        Agents
       </div>
       <!-- <div :class="(activeTab == 'users') ? 'w-2/12 tab-active' : 'w-2/12 tab'" @click="select('users')">Public Users
       </div> -->
