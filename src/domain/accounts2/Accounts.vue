@@ -42,8 +42,8 @@ function select(tab: string) {
     <div class="flex flex-grow">
       <div class="w-full">
         <BackofficeAccounts v-if="activeTab == 'backoffice'" />
-        <BranchManagers v-if="activeTab == 'branchmanagers'" />
-        <!-- <UserAccounts v-if="activeTab == 'users'" /> -->
+        <BranchManagers v-if="activeTab == 'mdas'" />
+        <UserAccounts v-if="activeTab == 'agents'" />
       </div>
     </div>
   </div>
