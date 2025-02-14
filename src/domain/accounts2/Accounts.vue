@@ -29,17 +29,13 @@ function select(tab: string) {
         Backoffice
       </div>
       <div
-        :class="
-          activeTab == 'mdas' ? 'w-2/12 tab-active' : 'w-2/12 tab'
-        "
+        :class="activeTab == 'mdas' ? 'w-2/12 tab-active' : 'w-2/12 tab'"
         @click="select('mdas')"
       >
         MDAs
       </div>
       <div
-        :class="
-          activeTab == 'agents' ? 'w-2/12 tab-active' : 'w-2/12 tab'
-        "
+        :class="activeTab == 'agents' ? 'w-2/12 tab-active' : 'w-2/12 tab'"
         @click="select('agents')"
       >
         Agents
