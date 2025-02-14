@@ -9,11 +9,9 @@ import router from "@/router";
 import { useProviderStore } from "@/domain/entities/stores";
 import AssignBranchManager from "@/domain/branches/components/AssignBranchManager.vue";
 import EditBranch from "@/domain/branches/components/EditBranch2.vue";
-// import CategorySelector from "@/domain/settings/components/CategorySelector.vue";
 import { useNotificationsStore } from "@/stores/notifications";
 import type { ApiError } from "@/types";
 import { useAccountStore } from "../auth/stores";
-// import TableLoader from "@/components/TableLoader.vue";
 import { useBilling } from "@/domain/finances/stores";
 
 const billingStore = useBilling();
