@@ -13,7 +13,6 @@ import type {
 } from "./types";
 import EditBackOfficeAccount from "@/domain/accounts2/components/EditBackOfficeAccount.vue";
 
-
 const page: Ref<number> = ref(1);
 const limit: Ref<number> = ref(5);
 const loading: Ref<boolean> = ref(false);
@@ -31,9 +30,8 @@ const showPagination = computed(() => totalRecords.value >= limit.value);
 const editModalOpen: Ref<boolean> = ref(false);
 const viewModalOpen: Ref<boolean> = ref(false);
 
-
-  function editBackofficeAccount(backofficeAccount:Account) {
-  localStorage.setItem("backofficeAccount", JSON.stringify(backofficeAccount))
+function editBackofficeAccount(backofficeAccount: Account) {
+  localStorage.setItem("backofficeAccount", JSON.stringify(backofficeAccount));
   editModalOpen.value = true;
 }
 function close() {
@@ -41,8 +39,6 @@ function close() {
   viewModalOpen.value = false;
   editModalOpen.value = false;
 }
-
-
 
 const jumpToPage = () => {
   if (pageInput.value > totalPages.value) {
@@ -432,7 +428,7 @@ watch(
   <AppModal v-model="editModalOpen" xl2>
     <!-- Put here whatever makes you smile -->
     <!-- Chances are high that you're starting with a form -->
-    <EditBackOfficeAccount @cancel="close"/>
+    <EditBackOfficeAccount @cancel="close" />
     <!-- That's also okay -->
   </AppModal>
 </template>
