@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { CreateAccount } from "@/types";
 import { type Ref, ref, reactive } from "vue";
-import { useAccounts } from "@/domain/accounts/stores";
+import { useAccounts } from "@/domain/accounts2/stores";
 import { useNotificationsStore } from "@/stores/notifications";
 import { defineEmits } from "vue";
 import { useBranchStore } from "@/domain/branches/stores";
