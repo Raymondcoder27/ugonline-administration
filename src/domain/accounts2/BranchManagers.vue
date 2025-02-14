@@ -12,7 +12,6 @@ import type {
   ManagerAccount,
   Account,
 } from "./types";
-// import AddManager from "@/domain/accounts2/components/AddManager.vue";
 import EditBranchManager from "@/domain/accounts2/components/EditManager.vue";
 
 import { useBranchStore } from "@/domain/branches/stores"; // Updated import
