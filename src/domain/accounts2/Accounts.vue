@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, type Ref } from "vue";
-import BackofficeAccounts from "@/domain/accounts2/BackofficeAccounts.vue";
+import BackofficeAccounts from "@/domain/accounts/Accounts.vue";
 import UserAccounts from "@/domain/accounts2/UserAccounts.vue";
 import BranchManagers from "@/domain/accounts2/BranchManagers.vue";
 
@@ -38,9 +38,9 @@ function select(tab: string) {
       </div>
       <div
         :class="
-          activeTab == 'mdas' ? 'w-2/12 tab-active' : 'w-2/12 tab'
+          activeTab == 'agents' ? 'w-2/12 tab-active' : 'w-2/12 tab'
         "
-        @click="select('mdas')"
+        @click="select('agents')"
       >
         Agents
       </div>
