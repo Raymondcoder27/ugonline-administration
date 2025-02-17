@@ -29,12 +29,12 @@ watch(
 <template>
   <div class="w-full shadow-lg bg-white rounded p-2">
     <div class="flex">
-      <div class="w-full py-1">
+      <!-- <div class="w-full py-1">
         <i
           class="bg-primary-700 border border-primary-800 text-white p-2 rounded-full fa-solid fa-users"
         ></i>
         <label class="text-lg mx-1">System Accounts</label>
-      </div>
+      </div> -->
     </div>
     <div class="flex space-x-2 my-1 pt-1 pb-3">
       <div class="flex-grow">

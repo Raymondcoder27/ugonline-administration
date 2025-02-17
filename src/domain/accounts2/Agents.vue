@@ -7,6 +7,7 @@ import moment from "moment/moment";
 import type { IGoFilter } from "@/types"
 import { useDebounceFn } from "@vueuse/core"
 import type { IResendVerificationPayload, TAccountVerificationType } from "./types"
+// import CreateAccount from "@/domain/accounts/CreateAccount.vue";
 
 const store = useAccounts();
 const modalOpen: Ref<boolean> = ref(false);
@@ -132,7 +133,13 @@ watch(
         </div>
       </div>
       <div class="flex">
-
+        <button
+          @click="modalOpen = true"
+          class="button btn-sm my-auto"
+          type="button"
+        >
+          <i class="px-1 fa-solid fa-plus"></i> Add Account
+        </button>
       </div>
     </div>
     <div class="flex my-1">
