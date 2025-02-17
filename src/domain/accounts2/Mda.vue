@@ -13,6 +13,8 @@ import type {
   Account,
 } from "./types";
 import EditBranchManager from "@/domain/accounts2/components/EditManager.vue";
+import CreateServiceProvider from "@/domain/providers/views/CreateServiceProvider.vue";
+
 
 import { useBranchStore } from "@/domain/branches/stores"; // Updated import
 
@@ -220,6 +222,12 @@ onMounted(() => {
           </button> -->
         </div>
       </div>
+      <div class="flex">
+        <button @click="modalOpen = true" class="button btn-sm my-auto" type="button">
+          <i class="px-1 fa-solid fa-plus"></i> Add Provider
+        </button>
+      </div>
+
     </div>
     <div class="flex my-1">
       <table class="table">
@@ -392,6 +400,13 @@ onMounted(() => {
     </div>
   </div>
 
+   <!-- Modal -->
+   <AppModal v-model="modalOpen" xl2>
+    <!-- Put here whatever makes you smile -->
+    <!-- Chances are high that you're starting with a form -->
+    <CreateServiceProvider @cancel="close"/>
+    <!-- That's also okay -->
+  </AppModal>
   <!-- Modal -->
   <AppModal v-model="editModalOpen" xl2>
     <EditBranchManager @managerAccountCreated="close" @cancel="close" />

@@ -50,7 +50,7 @@ onMounted(() => {
 function fetch() {
   filter.limit = limit.value
   filter.page = page.value
-  store.fetchUserAccounts(filter)
+  // store.fetchUserAccounts(filter)
 }
 
 function next(){
