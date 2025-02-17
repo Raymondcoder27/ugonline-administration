@@ -65,10 +65,9 @@ function submit() {
 
 <template>
   <div class="bg-white py-5">
-    <p class="text-xl font-bold">Create a BackOffice Account</p>
+    <p class="text-xl font-bold">Create an Agent Account</p>
     <p class="text-sm text-gray-500">
-      Administrators who will manage this portal and handle providers and
-      services
+      The individual responsible for overseeing agent operations, managing branches, tills, and ensuring smooth service delivery to the public.
     </p>
     <form @submit.prevent="submit" class="pt-5">
       <div class="">
