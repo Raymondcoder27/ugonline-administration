@@ -6,7 +6,6 @@ import { useNotificationsStore } from "@/stores/notifications";
 import { defineEmits } from "vue";
 import { useBranchStore } from "@/domain/branches/stores";
 import { idText } from "typescript";
-
 const branchStore = useBranchStore();
 
 let form: CreateAccount = reactive({
