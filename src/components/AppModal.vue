@@ -84,6 +84,7 @@ const closeModal: () => void = () => {
             leave-from="opacity-100 scale-100"
             leave-to="opacity-0 scale-95"
           >
+          
             <DialogPanel :class="modalClass">
               <div
                 @click="emit('update:modelValue', false)"
